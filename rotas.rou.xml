@@ -1,0 +1,50 @@
+<routes>
+
+    <vType id="carro"
+           accel="1.0"
+           decel="4.5"
+           sigma="0.5"
+           length="5"
+           maxSpeed="25"/>
+
+    <!-- Rotas -->
+
+    <route id="norte_sul" edges="norte_centro centro_sul"/>
+    <route id="sul_norte" edges="sul_centro centro_norte"/>
+
+    <route id="leste_oeste" edges="leste_centro centro_oeste"/>
+    <route id="oeste_leste" edges="oeste_centro centro_leste"/>
+
+    <!-- Veículos -->
+
+    <vehicle id="v1"  type="carro" route="norte_sul"  depart="0"/>
+    <vehicle id="v2"  type="carro" route="sul_norte"  depart="1"/>
+
+    <vehicle id="v3"  type="carro" route="leste_oeste" depart="2"/>
+    <vehicle id="v4"  type="carro" route="oeste_leste" depart="3"/>
+
+    <vehicle id="v5"  type="carro" route="norte_sul"  depart="4"/>
+    <vehicle id="v6"  type="carro" route="sul_norte"  depart="5"/>
+
+    <vehicle id="v7"  type="carro" route="leste_oeste" depart="6"/>
+    <vehicle id="v8"  type="carro" route="oeste_leste" depart="7"/>
+
+    <vehicle id="v9"  type="carro" route="norte_sul"  depart="8"/>
+    <vehicle id="v10" type="carro" route="sul_norte"  depart="9"/>
+
+    <vehicle id="v11" type="carro" route="leste_oeste" depart="10"/>
+    <vehicle id="v12" type="carro" route="oeste_leste" depart="11"/>
+
+    <vehicle id="v13" type="carro" route="norte_sul"  depart="12"/>
+    <vehicle id="v14" type="carro" route="sul_norte"  depart="13"/>
+
+    <vehicle id="v15" type="carro" route="leste_oeste" depart="14"/>
+    <vehicle id="v16" type="carro" route="oeste_leste" depart="15"/>
+
+    <vehicle id="v17" type="carro" route="norte_sul"  depart="16"/>
+    <vehicle id="v18" type="carro" route="sul_norte"  depart="17"/>
+
+    <vehicle id="v19" type="carro" route="leste_oeste" depart="18"/>
+    <vehicle id="v20" type="carro" route="oeste_leste" depart="19"/>
+
+</routes>

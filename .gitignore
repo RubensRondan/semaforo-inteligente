@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+meuenv/
+
+# Arquivos de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Modelos e arquivos gerados
+*.pkl
+registro_ciclos.csv
+dados_treinamento.csv
+
+# Configurações locais
+*.log

@@ -1,0 +1,16 @@
+import traci
+
+sumoCmd = ["sumo-gui", "-c", "cenario.sumocfg"]
+traci.start(sumoCmd)
+
+while traci.simulation.getMinExpectedNumber() > 0:
+    traci.simulationStep()
+
+    fluxo = traci.edge.getLastStepVehicleNumber("via_principal")
+
+    if fluxo > 20:
+        traci.trafficlight.setPhaseDuration("semaforo_1", 30)
+    else:
+        traci.trafficlight.setPhaseDuration("semaforo_1", 10)
+
+traci.close()
